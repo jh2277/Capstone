@@ -1,0 +1,4 @@
+repository "Capstone@Capstone_ADHD_Train_2@cloud"
+  path "/"
+    br "/main"
+    co "/main"
