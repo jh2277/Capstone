@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Oculus;
+
 
 public class Grappling : MonoBehaviour
 {
@@ -34,7 +36,10 @@ public class Grappling : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(grappleKey)) StartGrapple();
+        if (Input.GetKeyDown(grappleKey) || OVRInput.GetDown(OVRInput.Button.SecondaryIndexTrigger))
+        {
+            StartGrapple();
+        }
 
         if (grapplingCdTimer > 0)
             grapplingCdTimer -= Time.deltaTime;
@@ -96,7 +101,7 @@ public class Grappling : MonoBehaviour
 
         grapplingCdTimer = grapplingCd;
 
-        //lr.enabled = false;
+        lr.enabled = false;
     }
 
     public bool IsGrappling()

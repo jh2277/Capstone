@@ -10,7 +10,7 @@ EditorBuildSettings:
     guid: 8f16940f641208649a8f4c2128e56169
   - enabled: 1
     path: Assets/0Scenes/Kwak/JH 2.unity
-    guid: 584d64d778dd4984bb3428d49d698a84
+    guid: 1361d5b1af2354d42b3b20acd749f9a7
   m_configObjects:
-    Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 7ac084c4c3ac18d4f91dcd63bf97d739,
+    Unity.XR.Oculus.Settings: {fileID: 11400000, guid: ce43a7f2f6c8f424688b9023c1570eca,
       type: 2}

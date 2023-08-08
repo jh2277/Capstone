@@ -33,8 +33,14 @@ public class SwingingDone : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(swingKey)) StartSwing();
-        if (Input.GetKeyUp(swingKey)) StopSwing();
+        if (Input.GetKeyDown(swingKey) || OVRInput.GetDown(OVRInput.Button.PrimaryIndexTrigger))
+        {
+            StartSwing();
+        }
+        if (Input.GetKeyUp(swingKey) || OVRInput.GetUp(OVRInput.Button.PrimaryIndexTrigger))
+        {
+            StopSwing();
+        }
 
         CheckForSwingPoints();
 
