@@ -35,8 +35,7 @@ public class GameManager : MonoBehaviour
 
     //목숨
     private int currentHeart = 0; // 현재 목숨 순서 인덱스
-    public List<Image> heart = new List<Image>();
-    public Sprite emptyHeartSprite; // 빈 하트 스프라이트
+    public List<RawImage> heart = new List<RawImage>();
 
 
 
@@ -169,12 +168,14 @@ public class GameManager : MonoBehaviour
     }
     public void LifeDecrease() // 목숨 감소 함수
     {
-        if (currentHeart < heart.Count)
+        if (heart.Count>0)
         {
-            heart[currentHeart].sprite = emptyHeartSprite; // 빈 하트 스프라이트로 변경
+            RawImage rawImage = heart[currentHeart];
+            rawImage.gameObject.SetActive(false);
             currentHeart++;
         }
     }
+
 
     //public void NextStage()
     //{

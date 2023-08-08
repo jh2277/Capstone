@@ -78,3 +78,6 @@ crashlytics-build.properties
 *.wktree
 *.json
 *.asset
+*.changes
+.plastic/plastic.wktree
+.plastic/plastic.wktree
