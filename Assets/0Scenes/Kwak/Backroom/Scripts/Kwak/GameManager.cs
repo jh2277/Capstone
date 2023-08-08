@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour
     //UI에 넣을 이미지 컴퍼넌트 만들기
     public List<Image> currentColor = new List<Image>();
     public List<Image> targetColor = new List<Image>();
+
     //처음 3초만 이미지 보여주게끔.
     public float displayTime = 2f;
 
@@ -31,6 +32,12 @@ public class GameManager : MonoBehaviour
     //Scene Change
     public int stage;
     public bool finalStage;
+
+    //목숨
+    private int currentHeart = 0; // 현재 목숨 순서 인덱스
+    public List<Image> heart = new List<Image>();
+    public Sprite emptyHeartSprite; // 빈 하트 스프라이트
+
 
 
     void Start() //첫 프레임에 실행
@@ -159,6 +166,14 @@ public class GameManager : MonoBehaviour
             Application.Quit();
 #endif
 
+    }
+    public void LifeDecrease() // 목숨 감소 함수
+    {
+        if (currentHeart < heart.Count)
+        {
+            heart[currentHeart].sprite = emptyHeartSprite; // 빈 하트 스프라이트로 변경
+            currentHeart++;
+        }
     }
 
     //public void NextStage()

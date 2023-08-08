@@ -798,7 +798,12 @@ PlayerSettings:
   XboxOneOverrideIdentityPublisher: 
   vrEditorSettings: {}
   cloudServicesEnabled:
+    Build: 0
+    Game Performance: 0
+    Purchasing: 0
+    UDP: 0
     UNet: 1
+    Unity Ads: 0
   luminIcon:
     m_Name: 
     m_ModelFolderPath: 
@@ -811,13 +816,13 @@ PlayerSettings:
     m_VersionCode: 1
     m_VersionName: 
   apiCompatibilityLevel: 6
-  activeInputHandler: 0
+  activeInputHandler: 2
   windowsGamepadBackendHint: 0
-  cloudProjectId: 91abd247-a512-4347-8e65-8861439f1792
+  cloudProjectId: a2a69b65-e666-4f22-ac7e-aac997ae50b3
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: 
-  organizationId: 
+  projectName: Ultimate Game (Unity Project)
+  organizationId: capstone_adhd_train
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
   playerDataPath: 
