@@ -10,5 +10,10 @@ public class GameSceneMoves : MonoBehaviour
     {
         SceneManager.LoadScene("JH_W"); //어떤 씬 이름으로 이동할 건지
     }
+    public void GameSceneCtrl_Choice()
+    {
+        SceneManager.LoadScene("Choice"); //어떤 씬 이름으로 이동할 건지
+    }
+
 
 }

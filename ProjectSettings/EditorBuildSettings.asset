@@ -12,7 +12,7 @@ EditorBuildSettings:
     path: Assets/0Scenes/Kwak/JH 2.unity
     guid: 1361d5b1af2354d42b3b20acd749f9a7
   - enabled: 1
-    path: Assets/0Scenes/Woosung/SampleScene.unity
+    path: Assets/0Scenes/Woosung/Choice.unity
     guid: 97214909847a37242926b196871a4276
   - enabled: 1
     path: Assets/0Scenes/Woosung/JH_W.unity

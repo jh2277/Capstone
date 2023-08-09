@@ -5,11 +5,12 @@ public class CarSelection : MonoBehaviour
 {
     [SerializeField] private Button previousButton;
     [SerializeField] private Button nextButton;
-    private int currentCar;
+    private int currentCar = 0;
 
     private void Awake()
     {
         SelectCar(0);
+        SendData(currentCar);
     }
 
     private void SelectCar(int _index)
@@ -30,7 +31,7 @@ public class CarSelection : MonoBehaviour
         Debug.Log(currentCar);
         SendData(currentCar);
     }
-    
+
     public void SendData(int value)
     {
         PlayerPrefs.SetInt("C_Data", value);
