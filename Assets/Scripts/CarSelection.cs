@@ -27,5 +27,13 @@ public class CarSelection : MonoBehaviour
     {
         currentCar += _change;
         SelectCar(currentCar);
+        Debug.Log(currentCar);
+        SendData(currentCar);
+    }
+    
+    public void SendData(int value)
+    {
+        PlayerPrefs.SetInt("C_Data", value);
+        PlayerPrefs.Save();
     }
 }
