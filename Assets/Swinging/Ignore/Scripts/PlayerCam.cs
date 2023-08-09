@@ -25,10 +25,6 @@ public class PlayerCam : MonoBehaviour
     public float minFov;
     public float maxFov;
 
-    [Header("OculusHead")]
-    public Transform headAnchor;
-
-
     private void Start()
     {
         Cursor.lockState = CursorLockMode.Locked;
@@ -37,9 +33,6 @@ public class PlayerCam : MonoBehaviour
 
     private void Update()
     {
-        // Oculus 헤드셋의 머리 움직임을 감지하여 카메라 시점을 제어
-        transform.position = headAnchor.position;
-        transform.rotation = headAnchor.rotation;
         // get mouse input
         float mouseX = Input.GetAxisRaw("Mouse X") * sensX;
         float mouseY = Input.GetAxisRaw("Mouse Y") * sensY;

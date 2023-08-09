@@ -4,23 +4,29 @@ using UnityEngine;
 
 public class SendCharacter : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public int characterID; // 각 캐릭터마다 고유한 ID를 설정합니다.
+
+    private void Start()
     {
-        if(PlayerPrefs.HasKey("C_Data"))
+        if (PlayerPrefs.HasKey("C_Data"))
         {
-            int data = PlayerPrefs.GetInt("C_Data");
-            Debug.Log("Character data : " + data);
+            int selectedCharacterID = PlayerPrefs.GetInt("C_Data");
+            Debug.Log(selectedCharacterID);
+            
+            // 현재 캐릭터의 ID와 선택된 캐릭터의 ID가 일치하면 활성화, 아니면 비활성화
+            if (characterID == selectedCharacterID)
+            {
+                gameObject.SetActive(true);
+            }
+            else
+            {
+                gameObject.SetActive(false);
+            }
         }
         else
         {
             Debug.Log("No character data found.");
         }
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
+
