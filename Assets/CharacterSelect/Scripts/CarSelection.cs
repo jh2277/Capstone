@@ -31,7 +31,7 @@ public class CarSelection : MonoBehaviour
         Debug.Log(currentCar);
         SendData(currentCar);
     }
-    
+
     public void SendData(int value)
     {
         PlayerPrefs.SetInt("C_Data", value);
