@@ -176,32 +176,4 @@ public class GameManager : MonoBehaviour
         }
     }
 
-
-    //public void NextStage()
-    //{
-    //    if (itemCount == totalCount)
-    //    {
-    //        if (!finalStage)
-    //        {
-    //           SceneManager.LoadScene(stage + 1);
-    //        }
-    //        else
-    //        {
-    //            ExitGame();
-    //        }
-    //    }
-    //    else
-    //    {
-    //        SceneManager.LoadScene(stage);
-    //    }
-    //}
-    //public void ExitGame()
-    //{
-    //    #if UNITY_EDITOR
-    //        UnityEditor.EditorApplication.isPlaying = false;
-    //    #else
-    //        Application.Quit();
-    //    #endif
-
-    //}
 }
