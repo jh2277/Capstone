@@ -10143,7 +10143,7 @@ MonoBehaviour:
   success: {fileID: 8300000, guid: 19f89c6e740e7447f9e12a8310d3e973, type: 3}
   Finish: {fileID: 8300000, guid: 2667a0a008b044e218b63df62e2be749, type: 3}
   gameClear: {fileID: 2014822800}
-  stage: 2
+  stage: 3
   finalStage: 1
   heart:
   - {fileID: 1808690381}
