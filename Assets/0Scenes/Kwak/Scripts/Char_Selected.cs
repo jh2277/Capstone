@@ -8,11 +8,11 @@ public class Char_Selected : MonoBehaviour
 {
     public void GameSceneCtrlChoice()
     {
-        SceneManager.LoadScene(1); //어떤 씬 이름으로 이동할 건지
+        SceneManager.LoadScene(1); //캐릭터 선택 씬으로 이동
     }
     public void GameSceneCtrl()
     {
-        SceneManager.LoadScene(2); //어떤 씬 이름으로 이동할 건지
+        SceneManager.LoadScene(2); //Game Start
     }
 
 
